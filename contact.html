@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/icons/drop.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>تواصل معنا | منصة سقيا</title>
+</head>
+<body data-page="contact" data-protected="true">
+<header id="site-header" class="site-header"></header>
+<main class="container">
+  <div class="hero-icon" data-icon="phone"></div>
+  <h2 class="page-title">تواصل معنا</h2>
+  <p class="page-sub">نسعد بتواصلك معنا، أرسل رسالتك وسيتم الرد عليك في أقرب وقت.</p>
+  <form id="contactForm" class="card" novalidate>
+    <div class="form-grid">
+      <div class="field"><label for="cName">الاسم</label><input id="cName" type="text" autocomplete="name"><span class="err"></span></div>
+      <div class="field"><label for="cPhone">رقم الهاتف</label><input id="cPhone" type="tel" inputmode="tel"><span class="err"></span></div>
+      <div class="field"><label for="cEmail">البريد الإلكتروني <small>(اختياري)</small></label><input id="cEmail" type="email" dir="ltr" autocomplete="email"><span class="err"></span></div>
+      <div class="field"><label for="cSubject">الموضوع</label><input id="cSubject" type="text"><span class="err"></span></div>
+      <div class="field full"><label for="cMessage">رسالتك</label><textarea id="cMessage"></textarea><span class="err"></span></div>
+    </div>
+    <div class="actions"><button type="submit" id="sendBtn" class="btn btn-primary">إرسال الرسالة</button></div>
+  </form>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

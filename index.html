@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/icons/drop.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>تسجيل الدخول | منصة سقيا</title>
+</head>
+<body data-page="index">
+<main class="auth-page">
+  <header class="auth-brand">
+    <div class="logo-drop"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5S5 10 5 15a7 7 0 0014 0c0-5-7-12.5-7-12.5z"/></svg></div>
+    <h1>منصة سقيا</h1>
+    <p>المياه أصل الحياة</p>
+  </header>
+  <section class="card auth-card">
+    <form id="loginForm" novalidate>
+      <h2>تسجيل الدخول</h2>
+      <div class="field"><label for="loginUsername">اسم المستخدم</label><input id="loginUsername" type="text" autocomplete="username"><span class="err"></span></div>
+      <div class="field"><label for="loginPassword">كلمة المرور</label><div class="pw"><input id="loginPassword" type="password" autocomplete="current-password"><button type="button" class="toggle-pw">إظهار</button></div><span class="err"></span></div>
+      <button type="submit" class="btn btn-primary btn-block">تسجيل دخول</button>
+      <button type="button" id="showRegister" class="btn btn-outline btn-block">إنشاء حساب</button>
+    </form>
+    <form id="registerForm" novalidate hidden>
+      <h2>إنشاء حساب جديد</h2>
+      <div class="field"><label for="regName">الاسم الكامل</label><input id="regName" type="text" autocomplete="name"><span class="err"></span></div>
+      <div class="field"><label for="regPhone">رقم الهاتف</label><input id="regPhone" type="tel" inputmode="tel" autocomplete="tel"><span class="err"></span></div>
+      <div class="field"><label for="regUsername">اسم المستخدم</label><input id="regUsername" type="text" autocomplete="username"><span class="err"></span></div>
+      <div class="field"><label for="regPassword">كلمة المرور</label><div class="pw"><input id="regPassword" type="password" autocomplete="new-password"><button type="button" class="toggle-pw">إظهار</button></div><span class="err"></span></div>
+      <div class="field"><label for="regConfirm">تأكيد كلمة المرور</label><div class="pw"><input id="regConfirm" type="password" autocomplete="new-password"><button type="button" class="toggle-pw">إظهار</button></div><span class="err"></span></div>
+      <button type="submit" class="btn btn-primary btn-block">إنشاء الحساب</button>
+      <p class="switch">لديك حساب؟ <button type="button" id="showLogin" class="link-btn">تسجيل الدخول</button></p>
+    </form>
+  </section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

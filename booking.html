@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/icons/drop.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>طلب مياه | منصة سقيا</title>
+</head>
+<body data-page="booking" data-protected="true">
+<header id="site-header" class="site-header"></header>
+<main class="container">
+  <h2 class="page-title" id="pageTitle">طلب صهريج</h2>
+  <p class="page-sub">املأ البيانات التالية وسنراجع طلبك في أقرب وقت</p>
+  <form id="bookingForm" class="card" novalidate>
+    <div class="form-grid">
+      <div class="field"><label for="bName">الاسم</label><input id="bName" type="text" autocomplete="name"><span class="err"></span></div>
+      <div class="field"><label for="bPhone">رقم الهاتف</label><input id="bPhone" type="tel" inputmode="tel" autocomplete="tel"><span class="err"></span></div>
+      <div class="field"><label for="bService">نوع الخدمة</label><select id="bService"><option value="tanker">طلب صهريج مياه</option><option value="delivery">توصيل مياه</option></select><span class="err"></span></div>
+      <div class="field"><label for="bSize">حجم الطلب / الصهريج</label><select id="bSize"><option value="">اختر الحجم</option><option value="250">250 لتر</option><option value="500">500 لتر</option><option value="1000">1000 لتر</option><option value="2000">2000 لتر</option><option value="5000">5000 لتر</option><option value="other">أخرى</option></select><span class="err"></span></div>
+      <div class="field"><label for="bQty">الكمية</label><input id="bQty" type="number" min="1" step="1" value="1" inputmode="numeric"><span class="err"></span></div>
+      <div class="field"><label for="bPayment">طريقة الدفع</label><select id="bPayment"><option value="">اختر طريقة الدفع</option><option value="نقدًا عند الاستلام">نقدًا عند الاستلام</option><option value="تحويل بنكي">تحويل بنكي</option></select><span class="err"></span></div>
+      <div class="field"><label for="bAddress">العنوان</label><input id="bAddress" type="text" autocomplete="street-address"><span class="err"></span></div>
+      <div class="field"><label for="bArea">المنطقة</label><input id="bArea" type="text"><span class="err"></span></div>
+      <div class="field"><label for="bDate">تاريخ الطلب</label><input id="bDate" type="date"><span class="err"></span></div>
+      <div class="field"><label for="bTime">وقت التوصيل المفضل</label><input id="bTime" type="time"><span class="err"></span></div>
+      <div class="field full"><label for="bNotes">ملاحظات <small>(اختياري)</small></label><textarea id="bNotes"></textarea></div>
+    </div>
+    <div class="actions">
+      <button type="submit" id="submitBtn" class="btn btn-primary">تأكيد الطلب</button>
+      <button type="reset" class="btn btn-ghost">مسح</button>
+    </div>
+  </form>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

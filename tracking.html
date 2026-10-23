@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/icons/drop.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<title>متابعة الطلبات | منصة سقيا</title>
+</head>
+<body data-page="tracking" data-protected="true">
+<header id="site-header" class="site-header"></header>
+<main class="container">
+  <h2 class="page-title">متابعة الطلبات والاستشارات</h2>
+  <p class="page-sub">أدخل رقم الطلب لمعرفة حالته</p>
+  <form id="trackForm" class="card inline-form" novalidate>
+    <div class="field"><label for="tOrder">رقم الطلب</label><input id="tOrder" type="text" placeholder="SUG-2026-0001" dir="ltr" autocomplete="off"><span class="err"></span></div>
+    <button type="submit" id="trackBtn" class="btn btn-primary">متابعة الطلب</button>
+  </form>
+  <section id="result" aria-live="polite"></section>
+</main>
+<footer id="site-footer" class="site-footer"></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
